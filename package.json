@@ -1,0 +1,32 @@
+{
+  "name": "pecodetestautomationcypress",
+  "version": "1.0.0",
+  "description": "test automation practice",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cypress:open": "cypress open",
+    "smoke:ui": "npx cypress open --browser chrome --config specPattern=cypress/e2e/smoke-tests/home-page/UI/**",
+    "smoke:ui:headed": "npx cypress run --browser chrome --headless --config specPattern=cypress/e2e/smoke-tests/home-page/UI/**",
+    "smoke:api": "npx cypress open --browser chrome --config specPattern=cypress/e2e/smoke-tests/home-page/API/**",
+    "smoke:api:headed": "npx cypress run --browser chrome --headless --config specPattern=cypress/e2e/smoke-tests/home-page/API/**",
+    "features:ui": "npx cypress open --browser chrome --config specPattern=cypress/e2e/features/home-page/UI/**",
+    "report:smoke": "cypress run --spec cypress/e2e/smoke-tests/**/** --browser chrome --headed"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/cypress": "^1.1.3",
+    "cypress": "^13.6.2",
+    "cypress-mochawesome-reporter": "^3.8.0",
+    "eslint": "^8.56.0",
+    "eslint-plugin-chai-friendly": "^0.7.3",
+    "eslint-plugin-cypress": "^2.15.1",
+    "eslint-plugin-extra-rules": "^0.0.0-development",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-json": "^3.1.0",
+    "eslint-plugin-prettier": "^5.1.2",
+    "eslint-plugin-simple-import-sort": "^10.0.0"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "eslint.probe": ["javascript", "javascriptreact", "typescript", "typescriptreact", "html", "markdown"],
+  "todohighlight.include": [
+    "**/*.js",
+    "**/*.jsx",
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.html",
+    "**/*.php",
+    "**/*.css",
+    "**/*.scss"
+  ],
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "eslint.codeActionsOnSave.mode": "problems",
+  "eslint.run": "onSave",
+  "html.format.unformatted": "",
+  "eslint.codeActionsOnSave.rules": null
+}
